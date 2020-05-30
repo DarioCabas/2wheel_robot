@@ -39,7 +39,7 @@ _These instructions will get you a copy of the project up and running on your lo
 
 ## Prerequisites:clipboard:
 
-_You need to install all packages of_ **_ROS Melodic_** _and in the same way you need to use the_ **_RVIZ_** _if you want to see the model of your robot how its going on, and for the last_ **_Gazebo_** _ permit to control the robot, I use this robot in another repository that you can find in the next link:_
+_You need to install all packages of_ **_ROS Melodic_** _and in the same way you need to use the_ **_RVIZ_** _if you want to see the model of your robot how its going on, and for the last_ **_Gazebo_** _permit to control the robot, I use this robot in another repository that you can find in the next link:_
 
 
 https://github.com/DarioCabas/ROS_Webpage
@@ -87,9 +87,15 @@ rosdep check --from-paths . --melodic-src --rosdistro melodic
 
 ## Running the tests ⚙️
 
-**Run Web Server**
+**Running the model with RVIZ**
 
-![Recordit GIF](http://g.recordit.co/Bep26ht7lG.gif)
+![Recordit GIF](http://g.recordit.co/2arPhSURiX.gif)
+
+Model in RVIZ
+
+<p align="center">
+  <img width="460" height="300" src="https://im4.ezgif.com/tmp/ezgif-4-c002a8ed0cc9.gif">
+</p>
 
 **Run Two Wheel Robot**
 
