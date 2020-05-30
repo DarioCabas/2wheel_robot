@@ -102,8 +102,7 @@ _Don't forget to create a environment for python3 when you clone for the first t
 ## Built With🛠️
 
 * [ROS Melodic Morenia](http://wiki.ros.org/melodic) - The robot framework used
-* [Bootstrap](https://getbootstrap.com/) - Template starter page
-* [Vue.js](https://vuejs.org/) - Progressive JavaScript Framework 
+* [RVIZ](http://wiki.ros.org/rviz) - 3D visualizer for the Robot Operating System (ROS) framework
 * [Gazebo](http://gazebosim.org/tutorials?tut=ros_overview) - Simulator
 
 ## Authors✒️
