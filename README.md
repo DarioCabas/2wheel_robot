@@ -16,7 +16,7 @@
 
 # TWO WHEEL ROBOT IN GAZEBO-ROS
 
-_This is a short description about the content of my proyect. In this project I create an interface using a web page trough  HyperText Markup Language (HTML) and using some basic communication between the page and the robot that I made in RVIZ that is a 3D visualization tool for ROS. The objetive is control a two wheeled robot with the page web interface._
+_This is a short description about the content of my proyect. In this project I create a robot with ROS, we use a URDF model to construct our robot and uses the xacro files for more structure code of the robot in a different files. So in this present project you can see a robot based in two wheels and a caster front_
 
 ## Table of contents
 * [Getting Started](#Getting-Started)
