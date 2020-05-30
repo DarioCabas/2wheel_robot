@@ -101,20 +101,41 @@ Model in RVIZ
 
 ![Recordit GIF](https://im4.ezgif.com/tmp/ezgif-4-e9257d998270.gif)
 
-**Interface with the robot**
+**Teleoperation of the robot**
 
-![](https://im4.ezgif.com/tmp/ezgif-4-af25e940a0d7.gif)
+![](https://im4.ezgif.com/tmp/ezgif-4-b16be1e3d0c0.gif)
 
 ## Deployment📦
 
-_Don't forget to create a environment for python3 when you clone for the first time , because in that environment runs the web server, with the next command you can create:_
+_For use the teleoperation keyboard you need to download the teleop_twist_keyboard from the github to your ~/catkin_ws/src folder. Steps :_
 
 ```
-  virtualenv venv --python=python3
+  cd ~/catkin_ws/src
 ```
-<p align="center">
-  <img width="460" height="300" src="https://im4.ezgif.com/tmp/ezgif-4-c9215dd4f3e5.gif">
-</p>
+```
+  git clone https://github.com/ros-teleop/teleop_twist_keyboard
+```
+```
+  cd ~/catkin_ws
+```
+```
+  catkin_make
+```
+```
+  source ~/catkin_ws/devel/setup.bash
+```
+```
+  source ~/.bashrc
+```
+
+_You have your ros environment in your bashrc file. If you don't have do the next steps:_
+
+```
+  gedit ~/.bashrc
+```
+```
+  source ~/catkin_ws/devel/setup.bash
+```
 
 ## Built With🛠️
 
