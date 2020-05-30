@@ -16,7 +16,7 @@
 
 # TWO WHEEL ROBOT IN GAZEBO-ROS
 
-_This is a short description about the content of my proyect. In this project I create a robot with ROS, we use a URDF model to construct our robot and uses the xacro files for more structure code of the robot in a different files. So in this present project you can see a robot based in two wheels and a caster front_
+_This is a short description about the content of my proyect. In this project I create a robot with ROS, we use a URDF model to construct our robot and uses the xacro files for more structure code of the robot in a different files. So in this present project you can see a robot based in two wheels and a caster front that can visualize en RVIZ that is a tool for visualization._
 
 ## Table of contents
 * [Getting Started](#Getting-Started)
@@ -39,17 +39,19 @@ _These instructions will get you a copy of the project up and running on your lo
 
 ## Prerequisites:clipboard:
 
-_You need to install all packages of_ **_ROS Melodic_** _and in the same way you need to use the_ **_Rosbridge server_** _for enabled the communication so you need a mobile robot or in another case visit my another repository to use mine, you can find it in the next link:_
+_You need to install all packages of_ **_ROS Melodic_** _and in the same way you need to use the_ **_RVIZ_** _if you want to see the model of your robot how its going on, and for the last_ **_Gazebo_** _ permit to control the robot, I use this robot in another repository that you can find in the next link:_
 
 
-https://github.com/DarioCabas/2wheel_robot
+https://github.com/DarioCabas/ROS_Webpage
 
 
 ### Installing🔧
 
 #### Clone
 
-- _Clone this repo to your local machine using_ `https://github.com/DarioCabas/ROS_Webpage`
+- _Clone this repo to your local machine using_ `https://github.com/DarioCabas/2wheel_robot`
+
+- _You can find the robot in the file named 2wheel_robot_
 
 #### Setup
 
