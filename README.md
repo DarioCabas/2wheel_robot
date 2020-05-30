@@ -55,23 +55,34 @@ https://github.com/DarioCabas/ROS_Webpage
 
 #### Setup
 
-- _Create a virtual environment for Python 3:_
+- _Make sure git is installed on your Ubuntu machine:_
 
 ```
-  virtualenv venv --python=python3
-  source venv/bin/activate
+  sudo apt-get install git
 ```
 
-- _Run the webserver for static pages:_
+- _Download the source code from the gazebo_ros_pkgs github repository:_
 
 ```
-  cd ROS_webpage
-  python -m http.server
+  cd ~/catkin_ws/src
+  git clone https://github.com/ros-simulation/gazebo_ros_pkgs.git -b melodic-devel
 ```
-- _Run ROSBridge Websocket Server:_
+- _Check for any missing dependencies using rosdep:_
 
 ```
-roslaunch rosbridge_server rosbridge_websocket.launch
+rosdep update
+rosdep check --from-paths . --melodic-src --rosdistro melodic
+```
+- _You can automatically install the missing dependencies using rosdep via debian install:_
+
+```
+  rosdep install --from-paths . --ignore-src --rosdistro melodic -y
+```
+- _To build the Gazebo ROS integration packages, run the following commands:_
+
+```
+  cd ~/catkin_ws/
+  catkin_make
 ```
 
 ## Running the tests ⚙️
