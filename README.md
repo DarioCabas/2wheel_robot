@@ -89,16 +89,13 @@ rosdep check --from-paths . --melodic-src --rosdistro melodic
 
 **Running the model with RVIZ**
 
-![Recordit GIF](http://g.recordit.co/2arPhSURiX.gif)
+![Recordit GIF](http://g.recordit.co/2arPhSURiX.gif){:class="img-responsive"}
 
 Model in RVIZ
 
-<img src="http://g.recordit.co/XfdcMwy7uA.gif"/>
-
-![image](https://static01.bbi.io/2Wt9Tk.gif)
 
 <p align="center">
-  <img width="40" height="40" src="http://g.recordit.co/XfdcMwy7uA.gif" >
+  <img width="40" height="40" src="img/gifrviz" >
 </p>
 
 **Run model into Gazebo**
