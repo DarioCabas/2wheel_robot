@@ -93,9 +93,9 @@ rosdep check --from-paths . --melodic-src --rosdistro melodic
 
 Model in RVIZ
 
-![Sample Gif](http://i.imgur.com/http://g.recordit.co/XfdcMwy7uA.gif)
+<img src="http://g.recordit.co/XfdcMwy7uA.gif"/>
 
-<img src="/art/sample.gif?raw=true" width="200px">
+![image](https://static01.bbi.io/2Wt9Tk.gif)
 
 <p align="center">
   <img width="40" height="40" src="http://g.recordit.co/XfdcMwy7uA.gif" >
