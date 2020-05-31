@@ -99,7 +99,7 @@ Model in RVIZ
 
 **Run model into Gazebo**
 
-![Recordit GIF](https://im4.ezgif.com/tmp/ezgif-4-e9257d998270.gif)
+![Recordit GIF](http://g.recordit.co/FRvSf98Xin.gif)
 
 **Teleoperation of the robot**
 
