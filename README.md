@@ -103,7 +103,7 @@ Model in RVIZ
 
 **Teleoperation of the robot**
 
-![](http://g.recordit.co/ft5Uli8Y0p.gif)
+![](2wheel_robot_1/img/teleop.gif)
 
 ## Deployment📦
 
