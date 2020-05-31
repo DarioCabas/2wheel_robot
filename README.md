@@ -39,7 +39,7 @@ _These instructions will get you a copy of the project up and running on your lo
 
 ## Prerequisites:clipboard:
 
-_You need to install all packages of_ **_ROS Melodic_** _and in the same way you need to use the_ **_RVIZ_** _if you want to see the model of your robot how its going on, and for the last_ **_Gazebo_** _ permit to control the robot, I use this robot in another repository that you can find in the next link:_
+_You need to install all packages of_ **_ROS Melodic_** _and in the same way you need to use the_ **_RVIZ_** _if you want to see the model of your robot how its going on, and for the last_ **_Gazebo_** _permit to control the robot, I use this robot in another repository that you can find in the next link:_
 
 
 https://github.com/DarioCabas/ROS_Webpage
@@ -55,49 +55,87 @@ https://github.com/DarioCabas/ROS_Webpage
 
 #### Setup
 
-- _Create a virtual environment for Python 3:_
+- _Make sure git is installed on your Ubuntu machine:_
 
 ```
-  virtualenv venv --python=python3
-  source venv/bin/activate
+  sudo apt-get install git
 ```
 
-- _Run the webserver for static pages:_
+- _Download the source code from the gazebo_ros_pkgs github repository:_
 
 ```
-  cd ROS_webpage
-  python -m http.server
+  cd ~/catkin_ws/src
+  git clone https://github.com/ros-simulation/gazebo_ros_pkgs.git -b melodic-devel
 ```
-- _Run ROSBridge Websocket Server:_
+- _Check for any missing dependencies using rosdep:_
 
 ```
-roslaunch rosbridge_server rosbridge_websocket.launch
+rosdep update
+rosdep check --from-paths . --melodic-src --rosdistro melodic
+```
+- _You can automatically install the missing dependencies using rosdep via debian install:_
+
+```
+  rosdep install --from-paths . --ignore-src --rosdistro melodic -y
+```
+- _To build the Gazebo ROS integration packages, run the following commands:_
+
+```
+  cd ~/catkin_ws/
+  catkin_make
 ```
 
 ## Running the tests ⚙️
 
-**Run Web Server**
+**Running the model with RVIZ**
 
-![Recordit GIF](http://g.recordit.co/Bep26ht7lG.gif)
+![Recordit GIF](http://g.recordit.co/2arPhSURiX.gif)
 
-**Run Two Wheel Robot**
+Model in RVIZ
 
-![Recordit GIF](http://g.recordit.co/x7LbwonQLx.gif)
+<p align="center">
+  <img width="460" height="300" src="https://im4.ezgif.com/tmp/ezgif-4-c002a8ed0cc9.gif">
+</p>
 
-**Interface with the robot**
+**Run model into Gazebo**
 
-![](https://im4.ezgif.com/tmp/ezgif-4-af25e940a0d7.gif)
+![Recordit GIF](https://im4.ezgif.com/tmp/ezgif-4-e9257d998270.gif)
+
+**Teleoperation of the robot**
+
+![](https://im4.ezgif.com/tmp/ezgif-4-b16be1e3d0c0.gif)
 
 ## Deployment📦
 
-_Don't forget to create a environment for python3 when you clone for the first time , because in that environment runs the web server, with the next command you can create:_
+_For use the teleoperation keyboard you need to download the teleop_twist_keyboard from the github to your ~/catkin_ws/src folder. Steps :_
 
 ```
-  virtualenv venv --python=python3
+  cd ~/catkin_ws/src
 ```
-<p align="center">
-  <img width="460" height="300" src="https://im4.ezgif.com/tmp/ezgif-4-c9215dd4f3e5.gif">
-</p>
+```
+  git clone https://github.com/ros-teleop/teleop_twist_keyboard
+```
+```
+  cd ~/catkin_ws
+```
+```
+  catkin_make
+```
+```
+  source ~/catkin_ws/devel/setup.bash
+```
+```
+  source ~/.bashrc
+```
+
+_You have your ros environment in your bashrc file. If you don't have do the next steps:_
+
+```
+  gedit ~/.bashrc
+```
+```
+  source ~/catkin_ws/devel/setup.bash
+```
 
 ## Built With🛠️
 
