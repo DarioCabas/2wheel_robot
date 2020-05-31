@@ -93,8 +93,12 @@ rosdep check --from-paths . --melodic-src --rosdistro melodic
 
 Model in RVIZ
 
+![Sample Gif](http://i.imgur.com/http://g.recordit.co/XfdcMwy7uA.gif)
+
+<img src="/art/sample.gif?raw=true" width="200px">
+
 <p align="center">
-  <img width="460" height="300" src="https://im4.ezgif.com/tmp/ezgif-4-c002a8ed0cc9.gif">
+  <img width="40" height="40" src="http://g.recordit.co/XfdcMwy7uA.gif" >
 </p>
 
 **Run model into Gazebo**
