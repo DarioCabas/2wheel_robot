@@ -18,18 +18,6 @@
 
 _This is a short description about the content of my proyect. In this project I create a robot with ROS, we use a URDF model to construct our robot and uses the xacro files for more structure code of the robot in a different files. So in this present project you can see a robot based in two wheels and a caster front that can visualize en RVIZ that is a tool for visualization._
 
-## Table of contents
-* [Getting Started](#Getting-Started)
-* [Prerequisites](#Prerequisites)
-  * [Installing](#Installing)
-* [Running the tests](#running-the-tests)
-* [Deployment](#deployment)
-* [Built With](#built-With)
-* [Authors](#authors)
-* [License](#license)
-* [Contact](#contact)
-
-
 
 ## Getting Started🚀
 
